@@ -1,0 +1,2 @@
+config_files:custom_msgs:hardware/gazebo_envs:hardware/justina_description:hardware/occupancy_grid_utils:justina_gui:pocketsphinx:students:surge_et_ambula
+-DCATKIN_DEVEL_PREFIX=/home/agm/Mobile-Robots-2022-1/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/agm/Mobile-Robots-2022-1/catkin_ws/install -G Unix Makefiles
