@@ -13,7 +13,8 @@ import rospy
 from sensor_msgs.msg   import LaserScan
 from geometry_msgs.msg import Twist
 
-NAME = "APELLIDO_PATERNO_APELLIDO_MATERNO"
+NAME = "Equipo Dinamita"
+
 
 def callback_scan(msg):
     global obstacle_detected
@@ -26,7 +27,7 @@ def callback_scan(msg):
     return
 
 def main():
-    print("PRACTICE 00 - " + NAME)
+    print "PRACTICE 00 - " + NAME
     rospy.init_node("practice00")
     rospy.Subscriber("/scan", LaserScan, callback_scan)
     pub_cmd_vel = rospy.Publisher("/cmd_vel", Twist, queue_size=10)
@@ -53,4 +54,3 @@ if __name__ == '__main__':
         main()
     except rospy.ROSInterruptException:
         pass
-    
